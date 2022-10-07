@@ -3,12 +3,12 @@ package search
 // the default matcher.
 type defaultMatcher struct{}
 
-var defaultType = "default"
+var defaultMatcherName = "default"
 
 func init() {
 	var matcher defaultMatcher
 	// registers the default matcher.
-	Register(defaultType, matcher)
+	Register(defaultMatcherName, matcher)
 }
 
 // Search implements the behavior for the default matcher.
